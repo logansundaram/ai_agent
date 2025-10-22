@@ -4,7 +4,7 @@ from langchain.agents import initialize_agent, AgentType
 from langchain_ollama.llms import OllamaLLM
 
 def create_agent():
-    llm = OllamaLLM(model="gemma3:27b")
+    llm = OllamaLLM(model="gpt-oss:20b")
     tools = get_tools(llm)
     memory = get_memory()
     agent = initialize_agent(
