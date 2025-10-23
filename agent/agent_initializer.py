@@ -1,7 +1,7 @@
 from agent.tools import get_tools
 from agent.memory import get_memory
 from langchain.agents import initialize_agent, AgentType
-from langchain_ollama.llms import OllamaLLM
+from langchain_ollama.llms import OllamaLLM #deprected
 
 def create_agent():
     llm = OllamaLLM(model="gpt-oss:20b")
