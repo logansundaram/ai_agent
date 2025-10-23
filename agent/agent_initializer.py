@@ -1,6 +1,6 @@
 from agent.tools import get_tools
 from agent.memory import get_memory
-from langchain.agents import initialize_agent, AgentType
+from langchain.agents import initialize_agent, AgentType #deprected
 from langchain_ollama.llms import OllamaLLM #deprected
 
 def create_agent():
